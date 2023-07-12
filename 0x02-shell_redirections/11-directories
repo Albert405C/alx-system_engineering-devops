@@ -1,2 +1,3 @@
 #!/bin/bash
-shopt -s globstar; dirs=(**/); echo "Number of directories and sub-directories: ${#dirs[@]}"
+find . -mindepth 1 -type d | wc -l
+
